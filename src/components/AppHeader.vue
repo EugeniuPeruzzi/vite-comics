@@ -62,8 +62,8 @@
 
 <template >
     <header>
-        <div class="container mb">
-            <div class="row d-flex space-between pt">
+        <div class="container">
+            <div class="row d-flex space-between p-header">
                 <div class="col-6">
                     <div class="img-container">
                         <img src="../../public/dc-logo.png" alt="Dc Logo">
@@ -85,6 +85,7 @@
     
     li{
         margin-left: 20px;
+        padding: 48px 0px;
     }
 
     a {
@@ -96,7 +97,7 @@
     }
 
     li{
-        padding: 40px 0px;
+
     }
     li:hover{
         border-bottom: #0282F9 5px solid;
@@ -105,8 +106,8 @@
         }
     }
 
-    .mb{
-        margin-bottom: 25px;
+    .row{
+        height: 120px;
     }
 
 </style>
