@@ -150,6 +150,34 @@
                         acive: false
                     },
 
+                ],
+
+                imgs:[
+                    {
+                        src : '../src/assets/img/footer-facebook.png',
+                        link: '#',
+                        lable: 'Facebook'
+                    },
+                    {
+                        src : '../src/assets/img/footer-twitter.png',
+                        link: '#',
+                        lable: 'Twitter'
+                    },
+                    {
+                        src : '../src/assets/img/footer-youtube.png',
+                        link: '#',
+                        lable: 'Youtube'
+                    },
+                    {
+                        src : '../src/assets/img/footer-pinterest.png',
+                        link: '#',
+                        lable: 'Pinterest'
+                    },
+                    {
+                        src : '../src/assets/img/footer-periscope.png',
+                        link: '#',
+                        lable: 'Periscope'
+                    },
                 ]
             }
         }
@@ -203,8 +231,15 @@
                                 <div class="col-6">
                                     <button class="uppercase btn">sign-up now!</button>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 d-flex align-center">
                                     <h2 class="uppercase follow">follow us</h2>
+                                    <ul class="d-flex">
+                                        <li class="social-footer-list" v-for="(img, index) in imgs" :key="index">
+                                            <div class="img-container">
+                                                <a :href="img.link" :key="index"><img :src="img.src" :alt="img.lable"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -222,6 +257,7 @@
 
     .jumbotron-social{
         background-color: #303030;
+        padding: 30px 0px;
     }
 
     h2{
@@ -275,5 +311,11 @@
     .follow{
         color: #0282F9;
         font-weight: 600;
+        margin-right: 30px;
     }
+
+    .social-footer-list{
+        margin-left: 15px;
+    }
+
 </style>
