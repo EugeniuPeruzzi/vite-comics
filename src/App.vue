@@ -16,12 +16,13 @@
 </script>
 
 <template>
-  <!-- Utilizzo i file  -->
-  <AppHeader/>
-  <AppMain/>
-  <AppFooter/>
+    <!-- Utilizzo i file  -->
+    <AppHeader/>
+    <AppMain/>
+    <AppFooter/>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+  @use './style/generlas.scss' as *;
+  @use './style/partials/varibles';
 </style>
