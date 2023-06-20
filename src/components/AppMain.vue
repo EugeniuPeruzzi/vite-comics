@@ -20,7 +20,7 @@
                         lable: 'comic shop locator'
                     },
                     {
-                        immg: './src/assets/img/buy-comics-subscriptions.png',
+                        immg: './src/assets/img/buy-dc-power-visa.svg',
                         lable: 'dc power visa'
                     }
                 ]
@@ -41,7 +41,7 @@
         <div class="jumbotron-blue">
             <div class="container">
                 <div class="content">
-                    <ul class="d-flex space-between">
+                    <ul class="d-flex">
                         <li :key="index" v-for="(list, index) in lists" class="d-flex align-center">
                             <div class="img-container">
                                 <img :src="list.immg" :alt="list.lable">
@@ -72,8 +72,9 @@
     }
     
     .img-container{
-        width: 30%;
+        width: 20%;
     }
+
 
     h4{
         margin-left: 10px;
