@@ -4,7 +4,7 @@
             return{
                 objs : [
                     {
-                        label: 'haracter',
+                        label: 'Character',
                         link: '#',
                         acive: false
                     },

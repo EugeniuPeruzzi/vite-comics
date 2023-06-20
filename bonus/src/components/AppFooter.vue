@@ -213,7 +213,7 @@
                             </ul>
                         </div>
                         <div class="footer-three">
-                            <h2 class="uppercase">dc</h2>
+                            <h2 class="uppercase">sites</h2>
                             <ul>
                                 <li v-for="(obj, index) in sites" :key="index">
                                     <a :href="obj.link" >{{ obj.label }}</a>

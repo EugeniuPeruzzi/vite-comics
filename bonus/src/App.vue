@@ -2,15 +2,16 @@
   //collego i tre file a App
   import AppHeader from './components/AppHeader.vue';
   import AppMain from './components/AppMain.vue';
+  import AppBonus from './components/AppBonus.vue';
   import AppFooter from './components/AppFooter.vue';
-
 
   export default{
     // Richiamo i file 
     components:{
       AppHeader,
       AppMain,
-      AppFooter,  
+      AppBonus,
+      AppFooter,
     }
   }
 </script>
@@ -19,6 +20,7 @@
     <!-- Utilizzo i file  -->
     <AppHeader/>
     <AppMain/>
+    <AppBonus/>
     <AppFooter/>
 </template>
 
