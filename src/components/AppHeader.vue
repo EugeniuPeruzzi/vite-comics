@@ -48,11 +48,6 @@
                         link: '#',
                         acive: false
                     },
-                    {
-                        label: '',
-                        link: '#',
-                        acive: false
-                    },
 
                 ]
             }
