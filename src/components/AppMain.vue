@@ -58,7 +58,6 @@
 <style lang="scss" scoped>
     
     .jumbotron-black{
-        margin-top: 20px;
         background-color: #1C1C1C;
     }
     .main-content{

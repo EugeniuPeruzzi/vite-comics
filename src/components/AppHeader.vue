@@ -62,7 +62,7 @@
 
 <template >
     <header>
-        <div class="container">
+        <div class="container mb">
             <div class="row d-flex space-between pt">
                 <div class="col-6">
                     <div class="img-container">
@@ -83,9 +83,8 @@
 
 <style lang="scss" scoped>
     
-    ul li{
-        
-        margin-left: 10px;
+    li{
+        margin-left: 20px;
     }
 
     a {
@@ -104,6 +103,10 @@
         a{
             color: #0282F9;
         }
+    }
+
+    .mb{
+        margin-bottom: 25px;
     }
 
 </style>
