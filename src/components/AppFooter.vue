@@ -160,44 +160,55 @@
     <div>
         <div class="jumbotron">
             <div class="container">
-                <div class="row d-flex">
-                    <div class="col-6 d-flex mt">
+                <div class="row dc-background">
+                    <div class="col d-flex p-top-footer">
                         <div class="footer-one">
-                            <ul> <h2 class="uppercase">dc comics</h2>
+                            <h2 class="uppercase">dc comics</h2>
+                            <ul>
                                 <li v-for="(obj, index) in objs" :key="index">
                                     <a :href="obj.link" >{{ obj.label }}</a>
                                 </li>
                             </ul>
-                            
-                            <ul class="lil"><h2 class="uppercase">shop</h2>
+                            <h2 class="lil uppercase">shop</h2>
+                            <ul>
                                 <li v-for="(obj, index) in list" :key="index">
                                     <a :href="obj.link" >{{ obj.label }}</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="footer-two">
-                            <ul><h2 class="uppercase">dc</h2>
+                            <h2 class="uppercase">dc</h2>
+                            <ul>
                                 <li v-for="(obj, index) in dc" :key="index">
                                     <a :href="obj.link" >{{ obj.label }}</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="footer-three">
-                            <ul><h2 class="uppercase">dc</h2>
+                            <h2 class="uppercase">dc</h2>
+                            <ul>
                                 <li v-for="(obj, index) in sites" :key="index">
                                     <a :href="obj.link" >{{ obj.label }}</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="img-container">
-                            <img src="../assets/img/dc-logo-bg.png" alt="">
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+        <div class="jumbotron-social">
+                        <div class="container">
+                            <div class="row d-flex space-between">
+                                <div class="col-6">
+                                    <button class="uppercase btn">sign-up now!</button>
+                                </div>
+                                <div class="col-6">
+                                    <h2 class="uppercase follow">follow us</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     </div>
 </template>
 
@@ -206,7 +217,11 @@
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        
+
+    }
+
+    .jumbotron-social{
+        background-color: #303030;
     }
 
     h2{
@@ -236,5 +251,29 @@
 
     .mt{
         margin-top: 50px;
+    }
+
+    .dc-background{
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right top 50%;
+        padding-bottom: 70px;
+    }
+
+    .p-top-footer{
+        padding-top: 50px;
+    }
+
+    .btn{
+        border: 1px solid #0282F9;
+        padding: 8px 15px;
+        background-color: transparent;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .follow{
+        color: #0282F9;
+        font-weight: 600;
     }
 </style>

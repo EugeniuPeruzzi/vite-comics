@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="jumbotron-blue">
-            <div class="container">
+            <div class="container container-blue">
                 <div class="content">
                     <ul class="d-flex">
                         <li :key="index" v-for="(list, index) in lists" class="d-flex align-center">
@@ -80,6 +80,10 @@
         margin-left: 10px;
         color: #fff;
         font-weight: 400;
+    }
+
+    .container-blue{
+        max-width: 1170px;
     }
 
 </style>

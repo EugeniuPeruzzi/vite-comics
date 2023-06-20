@@ -48,6 +48,11 @@
                         link: '#',
                         acive: false
                     },
+                    {
+                        label: 'shop',
+                        link: '#',
+                        acive: false
+                    },
 
                 ]
             }
