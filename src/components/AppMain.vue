@@ -180,7 +180,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 0px;
+    padding: 40px 0px;
 }
 
 .btn {
